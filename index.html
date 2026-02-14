@@ -126,9 +126,9 @@
         <div id="jaw-section" style="display:none;margin-top:8px">
           <div style="font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#f97316;opacity:0.7;margin-bottom:6px">Jaw Open Axis</div>
           <div class="jaw-row">
-            <button class="axb active" data-a="x" id="ax-x">X</button>
+            <button class="axb" data-a="x" id="ax-x">X</button>
             <button class="axb" data-a="y" id="ax-y">Y</button>
-            <button class="axb" data-a="z" id="ax-z">Z</button>
+            <button class="axb active" data-a="z" id="ax-z">Z</button>
             <span style="margin-left:6px">Dir:</span>
             <button class="axb active" data-d="1" id="dir-p">+</button>
             <button class="axb" data-d="-1" id="dir-n">−</button>
@@ -172,7 +172,7 @@
 // ═══════════════════════════════════════════════════════
 // CONFIG & STATE
 // ═══════════════════════════════════════════════════════
-var CFG={hS:1,mS:1,mRange:1.0,yawMax:80,pitchMax:50,rollMax:35,dz:0.12,sm:0.12,msm:0.15,jawAxis:'x',jawDir:1,jawAngle:0.4};
+var CFG={hS:1,mS:1,mRange:1.0,yawMax:80,pitchMax:50,rollMax:35,dz:0.12,sm:0.12,msm:0.15,jawAxis:'z',jawDir:1,jawAngle:0.4};
 var S={tY:0,tP:0,tR:0,tM:0,cY:0,cP:0,cR:0,cM:0,keys:{}};
 var A={head:null,neck:null,jaw:null,headI:null,neckI:null,jawI:null,morphMesh:null,morphIdx:-1};
 var loadedModel=null, vrmData=null, allBones=[];
